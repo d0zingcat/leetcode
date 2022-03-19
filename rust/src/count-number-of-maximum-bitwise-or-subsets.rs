@@ -1,4 +1,3 @@
-pub struct Solution;
 impl Solution {
     pub fn count_max_or_subsets(nums: Vec<i32>) -> i32 {
         let n = nums.len();
@@ -22,12 +21,15 @@ impl Solution {
         ans
     }
 }
+
+pub struct Solution;
+
 #[cfg(test)]
 mod tests {
-    use crate::Solution;
+    use super::Solution;
 
     #[test]
-    fn it_works() {
+    fn test() {
         assert_eq!(2, Solution::count_max_or_subsets(vec![1, 3]));
         assert_eq!(7, Solution::count_max_or_subsets(vec![2, 2, 2]));
         assert_eq!(6, Solution::count_max_or_subsets(vec![3, 2, 1, 5]));

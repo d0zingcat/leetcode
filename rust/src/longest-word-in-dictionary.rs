@@ -1,8 +1,6 @@
 use std::cmp::Ordering::{Equal, Greater, Less};
 use std::collections::HashSet;
 
-pub struct Solution;
-
 impl Solution {
     pub fn longest_word(words: Vec<String>) -> String {
         let mut ans = "";
@@ -25,9 +23,12 @@ impl Solution {
         String::from(ans)
     }
 }
+
+pub struct Solution;
+
 #[cfg(test)]
 mod tests {
-    use crate::Solution;
+    use super::Solution;
 
     #[test]
     fn it_works() {
