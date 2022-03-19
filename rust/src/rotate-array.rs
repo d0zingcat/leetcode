@@ -12,7 +12,7 @@ mod tests {
     use super::Solution;
 
     #[test]
-    fn it_works() {
+    fn test() {
         let a = vec![5, 6, 7, 1, 2, 3, 4];
         let mut b = vec![1, 2, 3, 4, 5, 6, 7];
         Solution::rotate(&mut b, 10);

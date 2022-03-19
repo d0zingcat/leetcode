@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 use std::rc::Rc;
-use leetcode_prelude::TreeNode;
+use leetcode_prelude::{TreeNode};
 
 impl Solution {
     pub fn tree2str(root: Option<Rc<RefCell<TreeNode>>>) -> String {
@@ -15,7 +15,7 @@ impl Solution {
                 }
             }
             "".to_string()
-        };
+        }
         dfs(root)
     }
 }
@@ -24,9 +24,11 @@ pub struct Solution;
 
 #[cfg(test)]
 mod tests {
+    use super::Solution;
+    use leetcode_prelude::btree;
+
     #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
+    fn test() {
+        assert_eq!("1(2()(4))(3)", Solution::tree2str(btree![1,2,3,null,4]));
     }
 }

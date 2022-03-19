@@ -31,7 +31,7 @@ mod tests {
     use super::Solution;
 
     #[test]
-    fn it_works() {
+    fn test() {
         assert_eq!(
             "world",
             Solution::longest_word(
